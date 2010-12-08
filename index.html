@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script src="http://cdn.simplegeo.com/js/1.0/simplegeo.places.jq.min.js"></script>
+    <script src="http://github.com/simplegeo/polymaps/raw/v2.3.0/polymaps.js"></script> 
+    <script src="tipsy/jquery.tipsy.js"></script>
+    <style type="text/css">
+        @import url("tipsy/tipsy.css");
+        @import url("places.css");
+        body {
+            font: 12px Helvetica Neue;
+            overflow: hidden;
+        }
+        #searchbox {
+            position:absolute; top:.5em; right:1em;
+            background-color: black;
+            opacity: 0.75;
+            padding: 0 1em 1em 1em;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+        }
+        #searchbox h1 {
+            color: white;
+            font-weight: bold;
+        }
+        #search {
+            font-size: x-large; width: 20em;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+        }
+        .tipsy-inner {
+          border-radius: 10px;
+          -moz-border-radius:10px; 
+          -webkit-border-radius:10px;
+        }
+        .tipsy-inner div {
+          padding: 5px;
+          font-size: large;
+          text-align: left;
+        }
+        .layer circle {
+          fill: lightcoral;
+          fill-opacity: .5;
+          stroke: brown;
+          stroke-width: 1.5px;
+        }
+    </style>
+  </head>
+  <body id="map">
+    <div id="searchbox">
+        <h1>SimpleGeo Place Search</h1>
+        <input type="text" id="search" onChange="refresh(); return false" />
+    </div>
+    <script type="text/javascript" src="places.js"></script>
+    <span id="copy">
+      &copy; 2010
+      <a href="http://www.cloudmade.com/">CloudMade</a>,
+      <a href="http://www.openstreetmap.org/">OpenStreetMap</a> contributors,
+      <a href="http://creativecommons.org/licenses/by-sa/2.0/">CCBYSA</a>.
+    </span>
+  </body>
+</html>
