@@ -1,6 +1,4 @@
 var client = new simplegeo.PlacesClient('wdnCU4wKjvb3BYsW9UDGAdWzFDvfN9sW');
-// 'yvrrvAq33AvTp9XKuvhzTUkQtLksfGkT',
-//        {host: 'ec2-204-236-155-13.us-west-1.compute.amazonaws.com'});
 
 var po = org.polymaps;
 var map = po.map()
