@@ -5,7 +5,6 @@ var map = po.map()
     .container(document.getElementById("map").appendChild(po.svg("svg")))
     .add(po.interact())
     .add(po.hash())
-    .add(po.compass().pan("none"))
     .on("move", move)
     .on("resize", move);
 
@@ -18,6 +17,7 @@ map.add(po.image()
 var geojson = po.geoJson()
                 .on("load", setMarkers);
 map.add(geojson);
+map.add(po.compass().pan("none"))
 
 client.getLocationIP(function(err, position) {
     positionMap(err, position);

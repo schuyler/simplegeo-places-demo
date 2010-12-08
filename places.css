@@ -23,17 +23,17 @@ svg {
 }
 
 .compass .back {
-  fill: #eee;
-  fill-opacity: .8;
+  fill: #000;
+  fill-opacity: .75;
 }
 
 .compass .fore {
-  stroke: #999;
+  stroke: #c;
   stroke-width: 1.5px;
 }
 
 .compass rect.back.fore {
-  fill: #999;
+  fill: #fff;
   fill-opacity: .3;
   stroke: #eee;
   stroke-width: 1px;
@@ -46,7 +46,7 @@ svg {
 
 .compass .chevron {
   fill: none;
-  stroke: #999;
+  stroke: #fff;
   stroke-width: 5px;
 }
 
