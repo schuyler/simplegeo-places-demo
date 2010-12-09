@@ -26,7 +26,7 @@ client.getLocationIP(function(err, position) {
 
 function positionMap(err, position) {
     if (err) { 
-        console.error(err);
+        (typeof console == "undefined") ? alert(e) : console.error(e);
     } else {
         var coords = position.coords;
         map.center({lat: coords.latitude, lon: coords.longitude});
@@ -48,7 +48,7 @@ function refresh() {
         timeout = setTimeout(function () {}, delay);
         client.search(map.center().lat, map.center().lon, {q: search.value}, function(err, data) {
             if (err) 
-                console.error(err);
+                (typeof console == "undefined") ? alert(e) : console.error(e);
             else
                 geojson.features(data.features);
         });
