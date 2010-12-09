@@ -82,7 +82,7 @@ function setMarkers(e) {
     }
     for (var c = 0; c < properties.tags.length; c++)
         if (properties.tags[c])
-            tags += "#" + properties.tags[c] + "&nbsp;";
+            tags += "#" + properties.tags[c] + " ";
     $(anchor).tipsy({
         html: true,
         fallback: '<div class="business">'
