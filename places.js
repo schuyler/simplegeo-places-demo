@@ -19,7 +19,7 @@ var geojson = po.geoJson()
 map.add(geojson);
 map.add(po.compass().pan("none"))
 
-client.getLocationByIP(function(err, position) {
+client.getLocationFromIP(function(err, position) {
     positionMap(err, position);
     client.watchLocationFromBrowser({enableHighAccuracy: true}, positionMap);
 });
