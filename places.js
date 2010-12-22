@@ -1,4 +1,4 @@
-var client = new simplegeo.PlacesClient('wdnCU4wKjvb3BYsW9UDGAdWzFDvfN9sW');
+var client = new simplegeo.PlacesClient('A4SHeDsBquESjQ2JVYcvgRfuCZCtFMhv');
 
 var po = org.polymaps;
 var map = po.map()
@@ -19,7 +19,7 @@ var geojson = po.geoJson()
 map.add(geojson);
 map.add(po.compass().pan("none"))
 
-client.getLocationIP(function(err, position) {
+client.getLocationByIP(function(err, position) {
     positionMap(err, position);
     client.watchLocationHTML5({enableHighAccuracy: true}, positionMap);
 });
