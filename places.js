@@ -19,9 +19,9 @@ var geojson = po.geoJson()
 map.add(geojson);
 map.add(po.compass().pan("none"))
 
-client.getLocationByIP(function(err, position) {
+client.getLocationByIp(function(err, position) {
     positionMap(err, position);
-    client.watchLocationHTML5({enableHighAccuracy: true}, positionMap);
+    client.watchLocationFromBrowser({enableHighAccuracy: true}, positionMap);
 });
 
 function positionMap(err, position) {
